@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', 'Inter', system-ui, sans-serif;
+
+  --color-retro-burgundy: #7C2A38;
+  --color-retro-orange: #EC7138;
+  --color-retro-beige: #EFDDB4;
+  --color-retro-brown: #4A3E39;
+  --color-retro-dark: #372821;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-retro-beige);
+  color: var(--color-retro-dark);
+}

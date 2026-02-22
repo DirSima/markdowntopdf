@@ -5,7 +5,10 @@ description = "A simple command-line tool to convert Markdown files to PDF"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi>=0.131.0",
     "markdown-pdf>=1.13.1",
+    "python-multipart>=0.0.22",
+    "uvicorn>=0.41.0",
 ]
 
 [project.scripts]
@@ -13,6 +16,7 @@ markdowntopdf = "markdowntopdf:main"
 
 [dependency-groups]
 dev = [
+    "httpx>=0.28.1",
     "pytest>=9.0.2",
     "ruff>=0.15.2",
 ]
