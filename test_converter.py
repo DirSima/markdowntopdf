@@ -1,6 +1,4 @@
 import pytest
-import os
-from pathlib import Path
 from markdowntopdf import convert_markdown_to_pdf
 
 def test_conversion_success(tmp_path):

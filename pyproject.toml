@@ -1,12 +1,15 @@
 [project]
 name = "markdowntopdf"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple command-line tool to convert Markdown files to PDF"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
     "markdown-pdf>=1.13.1",
 ]
+
+[project.scripts]
+markdowntopdf = "markdowntopdf:main"
 
 [dependency-groups]
 dev = [
